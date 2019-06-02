@@ -6,8 +6,6 @@ For this demo project, you will build a product gallery using React. The finishe
 - The required JSON data is provided for you. See `src/data.js`.
 - You will not have to implement any HTTP requests to fetch the data. These are provided for you in [src/requests.js](./src/requests.js) as "fake" HTTP requests.
 - Your primary concern is to build the UI while consuming and displaying the data from the "fake" request functions which return promises resolving with the data.
-- The project is designed to be completed in roughly 4 hours.
-- Submit the project via email upon completion, providing a link to your project repository.
 
 ## Instructions
 
