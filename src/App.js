@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import logo from './logo.svg';
 import * as requests from './requests';
+import Header from './components/Header';
+import SideNavBar from './components/SideNavBar';
 
 export default function App() {
   // Here as an example to get you started with requests.js
@@ -20,21 +21,8 @@ export default function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h2>Product Gallery Demo Project</h2>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React Docs
-        </a>
-      </header>
+      <Header />
+      <SideNavBar />
     </div>
   );
 }
