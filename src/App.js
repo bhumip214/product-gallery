@@ -4,6 +4,15 @@ import * as requests from './requests';
 import Header from './components/Header';
 import SideNavBar from './components/SideNavBar';
 import Products from './components/Products';
+import styled from 'styled-components';
+
+const Main = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 60px;
+  margin: 38px auto 0;
+  width: 1080px;
+`;
 
 export default function App() {
   const [categories, setCategories] = useState([]);
@@ -28,8 +37,10 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <SideNavBar categories={categories} />
-      <Products products={products} />
+      <Main>
+        <SideNavBar categories={categories} />
+        <Products products={products} />
+      </Main>
     </div>
   );
 }
